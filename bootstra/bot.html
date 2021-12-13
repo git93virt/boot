@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Food Varities</title>
+  </head>
+  <body>
+    <header
+      class="header"
+      style="
+        background-image: url(https://source.unsplash.com/1600x900/?pizza,sandwich);
+      "
+    >
+      <!-- Top Nav -->
+      <nav class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <a href="https://source.unsplash.com"
+                ><img class="nav__logo" src=""
+              /></a>
+              <a
+                class="link--no-underline nav__link nav__link--left"
+                href=""
+                title="View full API documentation"
+                >For All Food Lovers</a
+              >
+            </div>
+            <div class="col-sm-6 text-right hidden-xs">
+              <a
+                class="link--no-underline nav__link"
+                href="https://unsplash.com"
+                title="Visit unsplash.com"
+                >Different varities food in the world</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end Top Nav -->
+
+      <!-- Header Content -->
+      <div class="header__content">
+        <div class="container">
+          <!-- Title -->
+          <div class="header-title">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="site-name">Unsplash <span>Source</span></h1>
+                <h2 class="site-name__sub">
+                  Simple embedding for
+                  <a href="https://unsplash.com">Unsplash</a> photos. For a more
+                  advanced integration, see
+                  <a href="https://unsplash.com/developers">Unsplash API</a>.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- end Title -->
+
+          <!-- Header Form -->
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <!-- Form Options -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <button
+                    class="
+                      btn btn-outline btn-outline-alt
+                      is-active-btn-outline-alt
+                      js-header-trigger
+                    "
+                    data-header-text="https://source.unsplash.com/random"
+                  >
+                    Random
+                  </button>
+                  <button
+                    class="btn btn-outline btn-outline-alt js-header-trigger"
+                    data-header-text="https://source.unsplash.com/user/erondu"
+                  >
+                    From a user
+                  </button>
+                </div>
+              </div>
+              <!-- end Form Options -->
+
+              <!-- Form Input -->
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input
+                        id="CopyClipboardTarget"
+                        class="
+                          form-control
+                          input--header
+                          js-copy-target js-header-input
+                        "
+                        type="text"
+                        value="localhost"
+                      />
+                    </div>
+                  </div>
+                  <div class="help-block help-block--light">
+                    Simply add photo dimensions after the URL (ex: /800x600)
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <button
+                      data-clipboard-text="woohoooo!"
+                      data-clipboard-target="CopyClipboardTarget"
+                      class="
+                        btn btn-outline btn--header btn-block-level
+                        js-copy-trigger
+                      "
+                      value="Copy"
+                      style="display: none"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- end Form Input -->
+            </div>
+          </div>
+          <!-- end Header Form -->
+        </div>
+      </div>
+      <!-- end Header Content -->
+
+      <div class="header__footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-right">
+              <div class="zeta header-credit hidden-xs">
+                Photo by
+                <a
+                  class="link--no-underline"
+                  href="https://unsplash.com/vanschneider"
+                  >Tobias van Schneider</a
+                >
+              </div>
+
+              <div class="header__arrow">
+                <span class="beta icon icon-arrow-down"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container ">
+        <a class="navbar-brand " href="#">
+          <img
+            src="comfort-foods.jpg"
+            alt=""
+            width="50"
+            height="50"
+            class="d-inline-block "
+          />
+          Welcome to the world of food lovers
+        </a>
+      </div>
+    </nav>
+
+    <i class="bi-alarm" height="50" width="50">image</i>
+    <div
+      class="alert alert-success text-center alert-dismissible fade show"
+      role="alert"
+    >
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button
+              type="button"
+              class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+            >
+              Custom button
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">
+              Secondary
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
